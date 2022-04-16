@@ -1,0 +1,24 @@
+.NewUserForm {
+  margin: 2rem auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+}
+
+.NewUserForm label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.NewUserForm input {
+  width: 100%;
+  height: 1.3rem;
+  border-radius: 4px;
+  margin-bottom: 0.3rem;
+  border: 1px solid rgba(178, 177, 177, 0.649);
+}
+
+.NewUserForm input:focus {
+  outline: none;
+  border-color: #4f005f;
+}
