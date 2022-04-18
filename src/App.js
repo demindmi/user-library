@@ -14,18 +14,21 @@ function App() {
   const addUserHandler = (userName, userAge) => {
     setUsers((prevUsers) => {
       return [
-        { userName: userName, age: userAge, id: Math.random().toString() },
-        ,
+        {
+          userName: userName,
+          age: userAge,
+          id: Math.random().toString(),
+        },
         ...prevUsers,
       ];
     });
   };
 
   return (
-    <div>
+    <React.Fragment>
       <NewUserForm onAddUser={addUserHandler} />
       <UserList users={users} />
-    </div>
+    </React.Fragment>
   );
 }
 
